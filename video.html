@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Chamath</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="video.html" class="active">Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">Chamath</div>
+            <div class="close-btn" id="closeBtn">&times;</div>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="video.html" class="active">Videos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="side-nav-social">
+            <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Video Section -->
+    <section class="section">
+        <div class="container">
+            <h2>My Videos</h2>
+            
+            <!-- Video Categories -->
+            <div class="video-categories">
+                <button class="category-btn active" data-category="all">All Videos</button>
+                <button class="category-btn" data-category="music">Music</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="behind-the-scenes">Behind the Scenes</button>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card" data-category="music">
+                    <div class="video-thumbnail">
+                        <img src="./images/project1.png" alt="Video Thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-duration">3:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Latest Music Production</h3>
+                        <p>Behind the scenes of my latest music production</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 1.2K views</span>
+                            <span><i class="fas fa-calendar"></i> 2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card" data-category="tutorials">
+                    <div class="video-thumbnail">
+                        <img src="./images/project1.png" alt="Video Thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-duration">10:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Music Production Tutorial</h3>
+                        <p>Learn the basics of music production</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 2.5K views</span>
+                            <span><i class="fas fa-calendar"></i> 1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card" data-category="behind-the-scenes">
+                    <div class="video-thumbnail">
+                        <img src="./images/project1.png" alt="Video Thumbnail">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span class="video-duration">5:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>Studio Tour</h3>
+                        <p>Take a tour of my music studio</p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-eye"></i> 3.1K views</span>
+                            <span><i class="fas fa-calendar"></i> 2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="load-more-btn">Load More Videos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add script for navbar transparency -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Add script for side navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+        const sideNavLinks = document.querySelectorAll('.side-nav-links a');
+
+        function toggleSideNav() {
+            sideNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleSideNav);
+        closeBtn.addEventListener('click', toggleSideNav);
+        overlay.addEventListener('click', toggleSideNav);
+
+        // Close side nav when clicking a link
+        sideNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Video category filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const videoCards = document.querySelectorAll('.video-card');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                videoCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

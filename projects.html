@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Yashohara</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">Chamath</div>
+            <div class="close-btn" id="closeBtn">&times;</div>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="side-nav-social">
+            <a href="https://youtube.com/@zacbeatzmusic?si=ErVnuralpfRBallu" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/chamathyashohara" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Projects Section -->
+    <section class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">All Projects</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="mobile">Mobile Apps</button>
+                <button class="category-btn" data-category="music">Music Production</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Portfolio Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern and responsive portfolio website showcasing my work as a developer and music producer.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                            <a href="https://github.com/chamathyashohara" target="_blank" class="btn btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Production Project -->
+                <div class="project-card" data-category="music">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="Music Production">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Music Production</h3>
+                        <p>Professional music production and sound design for various projects and clients.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FL Studio</span>
+                            <span class="tech-tag">Sound Design</span>
+                            <span class="tech-tag">Mixing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://youtube.com/@zacbeatzmusic?si=ErVnuralpfRBallu" target="_blank" class="btn btn-primary">YouTube</a>
+                            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="btn btn-secondary">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="Social Media Presence">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Presence</h3>
+                        <p>Building and maintaining a strong social media presence across multiple platforms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Content Creation</span>
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Digital Marketing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="btn btn-secondary">TikTok</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="Web Development">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and dynamic web applications with modern technologies.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Live Demo</a>
+                            <a href="https://github.com/chamathyashohara" target="_blank" class="btn btn-primary">GitHub</a>
+                            <a href="#" class="btn btn-secondary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design Project -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="UI/UX Design">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and engaging user interfaces for web and mobile applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Adobe XD</span>
+                            <span class="tech-tag">UI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">View Designs</a>
+                            <a href="#" class="btn btn-secondary">Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Project -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="./images/project1.png" alt="Mobile App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile App Development</h3>
+                        <p>Building cross-platform mobile applications with modern frameworks.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">App Store</a>
+                            <a href="#" class="btn btn-secondary">Play Store</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Statistics -->
+            <div class="project-stats">
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>30+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <h3>4.8</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add script for navbar transparency -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Add script for side navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+        const sideNavLinks = document.querySelectorAll('.side-nav-links a');
+
+        function toggleSideNav() {
+            sideNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleSideNav);
+        closeBtn.addEventListener('click', toggleSideNav);
+        overlay.addEventListener('click', toggleSideNav);
+
+        // Close side nav when clicking a link
+        sideNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Project filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                projectCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

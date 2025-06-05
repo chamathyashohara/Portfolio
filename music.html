@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Tracks - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Yashohara</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html" class="active">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">Chamath</div>
+            <div class="close-btn" id="closeBtn">&times;</div>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html" class="active">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="side-nav-social">
+            <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Music Tracks Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Music Tracks</h2>
+            <div class="music-grid">
+                <!-- Music Track 1 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 1</h3>
+                        <p class="music-description">Description of the first track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>1.2K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>500</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>50</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 2 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 2</h3>
+                        <p class="music-description">Description of the second track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2.5K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>800</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>75</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 3 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 3</h3>
+                        <p class="music-description">Description of the third track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>3.1K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>1.2K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>100</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 4 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 4</h3>
+                        <p class="music-description">Description of the fourth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>1.8K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>600</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>45</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 5 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 5</h3>
+                        <p class="music-description">Description of the fifth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2.2K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>900</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>65</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 6 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 6</h3>
+                        <p class="music-description">Description of the sixth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>1.5K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>400</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>30</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 7 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 7</h3>
+                        <p class="music-description">Description of the seventh track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2.8K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>1.1K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>85</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 8 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 8</h3>
+                        <p class="music-description">Description of the eighth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>1.9K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>700</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>55</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 9 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 9</h3>
+                        <p class="music-description">Description of the ninth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2.3K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>950</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>70</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 10 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 10</h3>
+                        <p class="music-description">Description of the tenth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>1.7K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>550</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>40</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 11 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 11</h3>
+                        <p class="music-description">Description of the eleventh track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2.6K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>1K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>80</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Track 12 -->
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="./images/project1.png" alt="Music Track">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h3>Track Title 12</h3>
+                        <p class="music-description">Description of the twelfth track</p>
+                        <div class="music-analytics">
+                            <div class="analytics-item">
+                                <i class="fas fa-play"></i>
+                                <span>2K</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-heart"></i>
+                                <span>750</span>
+                            </div>
+                            <div class="analytics-item">
+                                <i class="fas fa-comment"></i>
+                                <span>60</span>
+                            </div>
+                        </div>
+                        <div class="music-actions">
+                            <button class="action-btn like-btn">
+                                <i class="far fa-heart"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Online Music Editing Tools Section -->
+            <div class="music-tools-section">
+                <h3>Online Music Editing Tools</h3>
+                <p class="section-description">Create and edit your own music tracks using these powerful online tools</p>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4>Soundtrap</h4>
+                        <p>Create music online with a collaborative digital audio workstation</p>
+                        <a href="https://www.soundtrap.com" target="_blank" class="tool-link">Try Soundtrap <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h4>Audiotool</h4>
+                        <p>Professional online music production studio with virtual instruments</p>
+                        <a href="https://www.audiotool.com" target="_blank" class="tool-link">Try Audiotool <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <h4>BandLab</h4>
+                        <p>Free online music creation platform with powerful editing tools</p>
+                        <a href="https://www.bandlab.com" target="_blank" class="tool-link">Try BandLab <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h4>Soundation</h4>
+                        <p>Browser-based music studio with professional features</p>
+                        <a href="https://soundation.com" target="_blank" class="tool-link">Try Soundation <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h4>Amped Studio</h4>
+                        <p>Online DAW with virtual instruments and effects</p>
+                        <a href="https://ampedstudio.com" target="_blank" class="tool-link">Try Amped Studio <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-drum"></i>
+                        </div>
+                        <h4>FL Studio Web</h4>
+                        <p>Web version of the popular FL Studio music production software</p>
+                        <a href="https://www.image-line.com/fl-studio-web" target="_blank" class="tool-link">Try FL Studio Web <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add script for navbar transparency -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Add script for side navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+        const sideNavLinks = document.querySelectorAll('.side-nav-links a');
+
+        function toggleSideNav() {
+            sideNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleSideNav);
+        closeBtn.addEventListener('click', toggleSideNav);
+        overlay.addEventListener('click', toggleSideNav);
+
+        // Close side nav when clicking a link
+        sideNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Add music player functionality
+        document.querySelectorAll('.play-overlay').forEach(overlay => {
+            overlay.addEventListener('click', function() {
+                const playIcon = this.querySelector('i');
+                if (playIcon.classList.contains('fa-play')) {
+                    playIcon.classList.remove('fa-play');
+                    playIcon.classList.add('fa-pause');
+                } else {
+                    playIcon.classList.remove('fa-pause');
+                    playIcon.classList.add('fa-play');
+                }
+            });
+        });
+
+        // Add like button functionality
+        document.querySelectorAll('.like-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    this.classList.add('liked');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    this.classList.remove('liked');
+                }
+            });
+        });
+
+        // Add share button functionality
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Add your sharing logic here
+                alert('Sharing functionality will be implemented here!');
+            });
+        });
+    </script>
+</body>
+</html> 

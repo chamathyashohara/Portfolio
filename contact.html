@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Chamath</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">Chamath</div>
+            <div class="close-btn" id="closeBtn">&times;</div>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="side-nav-social">
+            <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            
+            <!-- Contact Methods -->
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Get in touch via email</p>
+                    <a href="mailto:chamath.yasho95@gmail.com" class="contact-link">
+                        chamath.yasho95@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with me on WhatsApp</p>
+                    <a href="https://wa.me/94765636788" class="contact-link" target="_blank">
+                        +94 76 563 6788
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Success Popup -->
+            <div class="popup" id="successPopup">
+                <div class="popup-content">
+                    <div class="popup-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Message Sent Successfully!</h3>
+                    <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    <button class="popup-close-btn" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add script for navbar transparency -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Add script for side navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+        const sideNavLinks = document.querySelectorAll('.side-nav-links a');
+
+        function toggleSideNav() {
+            sideNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleSideNav);
+        closeBtn.addEventListener('click', toggleSideNav);
+        overlay.addEventListener('click', toggleSideNav);
+
+        // Close side nav when clicking a link
+        sideNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Form submission and popup handling
+        const contactForm = document.getElementById('contactForm');
+        const successPopup = document.getElementById('successPopup');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Here you would typically handle the form submission to your backend
+            // For now, we'll just show the success popup
+            successPopup.classList.add('active');
+            contactForm.reset();
+        });
+
+        function closePopup() {
+            successPopup.classList.remove('active');
+        }
+
+        // Close popup when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === successPopup) {
+                closePopup();
+            }
+        });
+    </script>
+</body>
+</html> 

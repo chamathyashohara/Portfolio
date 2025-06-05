@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">Yashohara</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side Navigation -->
+    <div class="side-nav" id="sideNav">
+        <div class="side-nav-header">
+            <div class="side-nav-logo">Yashohara</div>
+            <div class="close-btn" id="closeBtn">&times;</div>
+        </div>
+        <ul class="side-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="music.html">Music Tracks</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="side-nav-social">
+            <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="greeting">Hello, I'm</div>
+                    <h1 class="animated-text">Yashohara</h1>
+                    <div class="role-text">
+                        <span class="static-text">I'm a </span>
+                        <span class="dynamic-text"></span>
+                    </div>
+                    <p class="subtitle">Creating beautiful digital experiences</p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                    <div class="home-buttons">
+                        <a href="projects.html" class="cta-button">View Projects</a>
+                        <a href="contact.html" class="cta-button secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <img src="./images/home1.jpg" alt="Chamath" style="max-width: 100%; height: auto;">
+                        <div class="image-decoration"></div>
+                        <div class="floating-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://youtube.com/@zacbeatzmusic" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="http://tiktok.com/@zac.beats0" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="https://facebook.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zacb3atz?utm_source=qr&igsh=MTk3NWU0NXFmZGE4aA==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add script for navbar transparency -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Add script for side navigation -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sideNav = document.getElementById('sideNav');
+        const closeBtn = document.getElementById('closeBtn');
+        const overlay = document.getElementById('overlay');
+        const sideNavLinks = document.querySelectorAll('.side-nav-links a');
+
+        function toggleSideNav() {
+            sideNav.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sideNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleSideNav);
+        closeBtn.addEventListener('click', toggleSideNav);
+        overlay.addEventListener('click', toggleSideNav);
+
+        // Close side nav when clicking a link
+        sideNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                sideNav.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html> 
